@@ -8,6 +8,14 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { useForm } from "react-hook-form"
 
+type TrialForm = {
+  phone: string;
+  name: string;
+  gender: string;
+  category: string;
+  referral: string;
+};
+
 const categories = {
   "Instruments": [
     { "value": "piano", "label": "Piano" },
@@ -38,7 +46,7 @@ const categories = {
 }
 
 export default function CalToAction() {
-  const form = useForm<{ phone: string, name: string, gender: string, category: string, referral: string }>({
+  const form = useForm<TrialForm>({
     defaultValues: {
       phone: "",
       name: "",
@@ -48,8 +56,8 @@ export default function CalToAction() {
     },
   })
 
-  function onSubmit(values: any) {
-    console.log(values)
+  function onSubmit(values: TrialForm) {
+    console.log(values);
   }
 
   return (

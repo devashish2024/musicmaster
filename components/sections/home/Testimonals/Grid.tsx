@@ -81,7 +81,7 @@ const TestimonalsCol = (props: {
         {[...new Array(2)].fill(0).map((_, index) => (
           <Fragment key={index}>
             {props.testimonals.map(
-              ({ author, avatar, message, headline }, index: any) => (
+              ({ author, avatar, message, headline }, index: number) => (
                 <div
                   key={index}
                   className="p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] w-full"

@@ -12,10 +12,10 @@ export default function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount(prev => ({
+      setCount({
         tutors: 75,
         cities: 120
-      }))
+      })
     }, 30)
 
     return () => clearInterval(interval)

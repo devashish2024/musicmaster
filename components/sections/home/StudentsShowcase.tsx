@@ -53,7 +53,7 @@ export default function StudentShowcase() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-blue-900">Witness Our Students' Musical Journey</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-blue-900">Witness Our Students&apos; Musical Journey</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           From beginners to advanced performers, our students showcase their growth and passion for music.
           Click on any video to see these rising stars in action and experience the power of dedicated learning.
