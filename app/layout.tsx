@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"
+import { Karla } from "next/font/google"
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Providers from "./providers";
 import Footer from "@/components/layout/Footer";
 
-const sans = Inter({ subsets: ["latin"], weight: ['400'] });
+const sans = Karla({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

@@ -1,4 +1,4 @@
-import { TwitterLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { TwitterLogoIcon, InstagramLogoIcon, DiscordLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 export default function Footer() {
@@ -19,6 +19,14 @@ export default function Footer() {
           <Link href="#" className="text-gray-600 hover:text-gray-800">
             <InstagramLogoIcon className="h-5 w-5" />
             <span className="sr-only">Instagram</span>
+          </Link>
+          <Link href="#" className="text-gray-600 hover:text-gray-800">
+            <DiscordLogoIcon className="h-5 w-5" />
+            <span className="sr-only">Discord</span>
+          </Link>
+          <Link href="#" className="text-gray-600 hover:text-gray-800">
+            <GitHubLogoIcon className="h-5 w-5" />
+            <span className="sr-only">GitHub</span>
           </Link>
         </div>
       </div>
