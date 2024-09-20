@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { Users, Globe } from "lucide-react"
+import CountUp from 'react-countup'
 
 export default function Hero() {
   const [count, setCount] = useState({ tutors: 0, cities: 0 })
@@ -12,8 +13,8 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount(prev => ({
-        tutors: prev.tutors < 75 ? prev.tutors + 1 : 75,
-        cities: prev.cities < 120 ? prev.cities + 1 : 120
+        tutors: 75,
+        cities: 120
       }))
     }, 30)
 
@@ -39,12 +40,12 @@ export default function Hero() {
           <div className="flex space-x-4">
             <div className="flex items-center space-x-2">
               <Users className="text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">{count.tutors}+</span>
+              <CountUp end={count.tutors} duration={5} separator="," className='text-2xl font-semibold text-slate-800' />
               <span className="text-gray-600">Tutors</span>
             </div>
             <div className="flex items-center space-x-2">
               <Globe className="text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">{count.cities}+</span>
+              <CountUp end={count.cities} duration={5} separator="," className='text-2xl font-semibold text-slate-800' />
               <span className="text-gray-600">Cities</span>
             </div>
           </div>

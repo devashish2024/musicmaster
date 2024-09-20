@@ -12,7 +12,7 @@ const navLinks = [
 
 export default function NavLinks() {
   return (
-    <ul className="hidden md:flex md:flex-row md:gap-4">
+    <ul className="hidden lg:flex lg:flex-row lg:gap-4">
       {navLinks.map((link) => (
         <li key={link.href}>
           {link.dropdown ? (
