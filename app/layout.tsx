@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Providers from "./providers";
 import Footer from "@/components/layout/Footer";
 
-const sans = Inter({ subsets: ["latin"] });
+const sans = Inter({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
